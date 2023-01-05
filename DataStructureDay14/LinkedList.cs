@@ -54,6 +54,18 @@ namespace DataStructureDay14
                 }
             }
         }
+        public void Insertnode(int data, int afterNum)          //Insert method for creating inserting element
+        {
+            Node node = new Node(data);
+            Node temp = head;
+            while(temp.data != afterNum)
+            {
+                temp = temp.next;
+            }
+            node.next = temp.next;
+            temp.next = node;
+            Console.WriteLine("Node {0} inserted after {1}.", data,afterNum);
+        }
         public void Display()           //Display method for addlast and addfirst method
         {
             Node temp = this.head;
