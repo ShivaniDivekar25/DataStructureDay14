@@ -124,7 +124,7 @@ namespace DataStructureDay14
             }
 
         }
-        public void Display()           //Display method for UC1, UC2, UC5, UC6 method
+        public void Display()           //Display method for UC1, UC2, UC5, UC6, UC7, UC8 method
         {
             Node temp = this.head;
             if (temp == null)
