@@ -66,6 +66,18 @@ namespace DataStructureDay14
             temp.next = node;
             Console.WriteLine("Node {0} inserted after {1}.", data,afterNum);
         }
+        public void RemoveFirst()       //Remove first method for removing element
+        {
+            if (head == null)
+            {
+                Console.WriteLine("LinkedList is Empty");
+            }
+            else
+            {
+                head = head.next;
+                Console.WriteLine("Removed first node");
+            }
+        }
         public void Display()           //Display method for addlast and addfirst method
         {
             Node temp = this.head;
