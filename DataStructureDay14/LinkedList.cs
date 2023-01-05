@@ -78,7 +78,28 @@ namespace DataStructureDay14
                 Console.WriteLine("Removed first node");
             }
         }
-        public void Display()           //Display method for addlast and addfirst method
+        public void PopLast()         //Remove last method for removing element
+        {
+            if (head == null)
+            {
+                Console.WriteLine("The LinkedList is Empty");
+            }
+            else
+            {
+                if (head.next == null)
+                    head = null;
+                else
+                {
+                    Node temp = head;
+                    while (temp.next.next != null)
+                    {
+                        temp = temp.next;
+                    }
+                    temp.next = null;
+                }
+            }
+        }
+        public void Display()           //Display method for UC1, UC2, UC5, UC6 method
         {
             Node temp = this.head;
             if (temp == null)

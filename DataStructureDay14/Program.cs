@@ -6,10 +6,10 @@
         {
             Console.WriteLine("Welcome to Data Structure programs");
             Console.WriteLine("Please enter option given below");           //Taking user input
-            Console.WriteLine("Enter\n1:Add LinkedList\n2:Create LinkedList by Adding\n3:Create LinkedList by Appending\n4:Insert an element in LinkedList\n5:Remove first element in LinkedList");
+            Console.WriteLine("Enter\n1:Add LinkedList\n2:Create LinkedList by Adding\n3:Create LinkedList by Appending\n4:Insert an element in LinkedList\n5:Remove first element in LinkedList\n6:Remove last element in LinkedList");
             int option = Convert.ToInt32(Console.ReadLine());
             LinkedList linkedlist = new LinkedList();
-            switch (option)             //Calling different methods for UC1, UC2, UC3, UC4 and UC5
+            switch (option)             //Calling different methods for UC1, UC2, UC3, UC4, UC5 and UC6
             {
                 case 1:
                     linkedlist.AddLast(56);
@@ -40,6 +40,13 @@
                     linkedlist.AddLast(30);
                     linkedlist.AddLast(70);
                     linkedlist.RemoveFirst();
+                    linkedlist.Display();
+                    break;
+                case 6:
+                    linkedlist.AddLast(30);
+                    linkedlist.AddLast(70);
+                    linkedlist.AddLast(56);
+                    linkedlist.PopLast();
                     linkedlist.Display();
                     break;
                 default:
