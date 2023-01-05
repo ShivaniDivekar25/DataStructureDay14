@@ -99,6 +99,31 @@ namespace DataStructureDay14
                 }
             }
         }
+        public void Search(int input)          //Search method for searching element in linked list
+        {
+            bool isFound = false;
+            if (head == null)
+            {
+                Console.WriteLine("LinkedList is Empty");
+            }
+            else
+            {
+                Node temp = head;
+                while (temp != null)
+                {
+                    if (temp.data == input)
+                    {
+                        isFound = true;
+                        Console.WriteLine("Given node {0} is present.", input);
+                        break;
+                    }
+                    temp = temp.next;
+                }
+                if (!isFound)
+                    Console.WriteLine("Given node {0} is not present", input);
+            }
+
+        }
         public void Display()           //Display method for UC1, UC2, UC5, UC6 method
         {
             Node temp = this.head;
