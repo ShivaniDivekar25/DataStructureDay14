@@ -70,7 +70,7 @@
                     break;
             }
             Console.WriteLine("Please enter option given below");
-            Console.WriteLine("Enter\n1:Create stack using LinkedList");        //Taking user input
+            Console.WriteLine("Enter\n1:Create stack using LinkedList\n2:Creating Empty method to stack");        //Taking user input
             int option1 = Convert.ToInt32(Console.ReadLine());
             switch (option1)        //Calling different methods for stack and queue
             {
@@ -79,6 +79,13 @@
                     stack.Push(30);
                     stack.Push(56);
                     stack.Display();
+                    break;
+                case 2:
+                    stack.Push(70);
+                    stack.Push(30);
+                    stack.Push(56);
+                    stack.Display();
+                    stack.IsEmpty();
                     break;
                 default:
                     Console.WriteLine("Please choose correct option");
