@@ -27,6 +27,13 @@ namespace DataStructureDay14
             }
             Console.WriteLine("{0} is inserted into Queue", new_node.data);
         }
+        public void Dequeue()           //Creating Dequeue
+        {
+            if (head == null)
+                Console.WriteLine("No nodes are present in queue");
+            else
+                head = head.next;
+        }
         public void Display()           //Creating display method
         {
             Node temp = this.head;

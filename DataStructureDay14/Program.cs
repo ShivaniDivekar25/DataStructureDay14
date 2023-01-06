@@ -71,7 +71,7 @@
                     break;
             }
             Console.WriteLine("Please enter option given below");
-            Console.WriteLine("Enter\n1:Create stack using LinkedList\n2:Creating Empty method to stack\n3:Create Queue by using Enqueue method");        //Taking user input
+            Console.WriteLine("Enter\n1:Create stack using LinkedList\n2:Creating Empty method to stack\n3:Create Queue by using Enqueue method\n4:Dequeue method for Queue");        //Taking user input
             int option1 = Convert.ToInt32(Console.ReadLine());
             switch (option1)        //Calling different methods for stack and queue
             {
@@ -92,6 +92,13 @@
                     queue.Enqueue(56);
                     queue.Enqueue(30);
                     queue.Enqueue(70);
+                    queue.Display();
+                    break;
+                case 4:
+                    queue.Enqueue(56);
+                    queue.Enqueue(30);
+                    queue.Enqueue(70);
+                    queue.Dequeue();
                     queue.Display();
                     break;
                 default:
