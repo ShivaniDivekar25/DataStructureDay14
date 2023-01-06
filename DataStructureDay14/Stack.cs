@@ -9,7 +9,6 @@ namespace DataStructureDay14
     internal class Stack        //Creating class
     {
         public Node top;
-        LinkedList list = new LinkedList();
         public void Push(int newData)       //Creating method to push into stack
         {
             Node newNode = new Node(newData);

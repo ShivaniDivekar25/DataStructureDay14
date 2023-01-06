@@ -10,6 +10,7 @@
             int option = Convert.ToInt32(Console.ReadLine());
             LinkedList linkedlist = new LinkedList();
             Stack stack = new Stack();
+            Queue queue = new Queue();
             switch (option)             //Calling different methods for UC1, UC2, UC3, UC4, UC5, UC6, UC7 and UC8
             {
                 case 1:
@@ -70,7 +71,7 @@
                     break;
             }
             Console.WriteLine("Please enter option given below");
-            Console.WriteLine("Enter\n1:Create stack using LinkedList\n2:Creating Empty method to stack");        //Taking user input
+            Console.WriteLine("Enter\n1:Create stack using LinkedList\n2:Creating Empty method to stack\n3:Create Queue by using Enqueue method");        //Taking user input
             int option1 = Convert.ToInt32(Console.ReadLine());
             switch (option1)        //Calling different methods for stack and queue
             {
@@ -86,6 +87,12 @@
                     stack.Push(56);
                     stack.Display();
                     stack.IsEmpty();
+                    break;
+                case 3:
+                    queue.Enqueue(56);
+                    queue.Enqueue(30);
+                    queue.Enqueue(70);
+                    queue.Display();
                     break;
                 default:
                     Console.WriteLine("Please choose correct option");
