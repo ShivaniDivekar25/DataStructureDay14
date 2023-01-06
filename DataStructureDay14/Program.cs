@@ -9,6 +9,7 @@
             Console.WriteLine("Enter\n1:Add LinkedList\n2:Create LinkedList by Adding\n3:Create LinkedList by Appending\n4:Insert an element in LinkedList\n5:Remove first element in LinkedList\n6:Remove last element in LinkedList\n7:Searching node in LinkedList\n8:Insert an element after searching in LinkedList");
             int option = Convert.ToInt32(Console.ReadLine());
             LinkedList linkedlist = new LinkedList();
+            Stack stack = new Stack();
             switch (option)             //Calling different methods for UC1, UC2, UC3, UC4, UC5, UC6, UC7 and UC8
             {
                 case 1:
@@ -66,6 +67,21 @@
                     break;
                 default:
                     Console.WriteLine("Please choose the correct option");
+                    break;
+            }
+            Console.WriteLine("Please enter option given below");
+            Console.WriteLine("Enter\n1:Create stack using LinkedList");        //Taking user input
+            int option1 = Convert.ToInt32(Console.ReadLine());
+            switch (option1)        //Calling different methods for stack and queue
+            {
+                case 1:
+                    stack.Push(70);
+                    stack.Push(30);
+                    stack.Push(56);
+                    stack.Display();
+                    break;
+                default:
+                    Console.WriteLine("Please choose correct option");
                     break;
             }
         }
