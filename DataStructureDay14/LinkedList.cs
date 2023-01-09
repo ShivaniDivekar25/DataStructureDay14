@@ -122,9 +122,32 @@ namespace DataStructureDay14
                 if (!isFound)
                     Console.WriteLine("Given node {0} is not present", input);
             }
-
         }
-        public void Display()           //Display method for UC1, UC2, UC5, UC6, UC7, UC8 method
+        public void RemoveAtGivenPosition()     //Creating remove at given postion method
+        {
+            Node temp1 = head;
+            Node temp2 = head;
+            if (head == null)
+            {
+                Console.WriteLine("The LinkedList is Empty");
+            }
+            else
+            {
+                temp2.next.next = temp1.next.next.next;
+            }
+        }
+        public void size()          //Creating size method
+        {
+            Node temp = head;
+            int count = 0;
+            while (temp != null)
+            {
+                count++;
+                temp = temp.next;
+            }
+            Console.WriteLine("The size of linked list is:" + count);
+        }
+        public void Display()           //Display method for UC1, UC2, UC5, UC6, UC7, UC8, UC9 method
         {
             Node temp = this.head;
             if (temp == null)
